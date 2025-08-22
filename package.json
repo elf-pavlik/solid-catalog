@@ -24,7 +24,8 @@
   "dependencies": {
     "@comunica/query-sparql-rdfjs": "^4.3.0",
     "commander": "^14.0.0",
-    "node-w3capi": "^2.2.0"
+    "node-w3capi": "^2.2.0",
+    "rdf-dereference-store": "^1.4.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
