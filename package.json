@@ -1,9 +1,8 @@
 {
-  "name": "solid-catalog",
-  "version": "2.0.0",
+  "name": "solid-efforts-core",
+  "version": "1.0.0",
   "type": "module",
-  "description": "-- a listing of things useful to the Solid Community",
-  "main": "catalog.html",
+  "description": "",
   "bin": {
     "catalog": "cli/index.ts"
   },
@@ -17,12 +16,14 @@
     "all": "npm run build && npx catalog format && npm run test"
   },
   "keywords": [],
-  "author": "Jeff Zucker",
+  "author": {
+    "name": "elf Pavlik",
+    "url": "https://elf-pavlik.hackers4peace.net"
+  },
   "license": "MIT",
   "dependencies": {
     "@comunica/query-sparql-rdfjs": "^4.3.0",
     "commander": "^14.0.0",
-    "mashlib": "^1.10.4",
     "node-w3capi": "^2.2.0"
   },
   "devDependencies": {
@@ -43,8 +44,7 @@
     "rdf-transform-cli": "^1.1.0",
     "rdf-vocabulary": "^1.0.1",
     "semantic-release": "^24.2.5",
-    "shacl-engine": "^1.0.2",
-    "solid-node-client": "^3.0.0"
+    "shacl-engine": "^1.0.2"
   },
   "release": {
     "branches": [
@@ -60,7 +60,7 @@
         "prerelease": true
       }
     ],
-    "repositoryUrl": "https://github.com/solid/catalog",
+    "repositoryUrl": "https://github.com/elf-pavlik/solid-efforts-core",
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
