@@ -30,7 +30,7 @@ export async function saveData(dataset: Store, filePath: string): Promise<void> 
   fs.writeFileSync(filePath, outString)
 }
 
-export const ex = createVocabulary('http://example.org#', 'name', 'webid', 'siloId', 'member', 'siloUsername', 'Person', 'Organization')
+export const ex = createVocabulary('http://example.org#', 'name', 'description', 'webid', 'siloId', 'member', 'siloUsername', 'Person', 'Organization')
 export const schema = createVocabulary('http://schema.org/', 'name')
 export const rdfs = createVocabulary('http://www.w3.org/2000/01/rdf-schema#', 'label')
 
@@ -83,6 +83,9 @@ export const silos: { [key: string]: Silo } = {
   },
   w3c: {
     prefix: 'w3c:'
+  },
+  matrix: {
+    prefix: 'matrix:'
   }
 }
 

@@ -2260,6 +2260,14 @@ wd:Q978185 ex:name "TypeScript" ;
   ex:repository <https://github.com/solid-contrib/getting-started/> ;
   ex:subType con:AboutSolidApps .
 
+<urn:uuid:83ffd40e-8604-46b2-ada5-1f3482fc7dcf> a ex:Service ;
+  ex:description "Repository: https://github.com/solid/specification - Technical Reports: https://solidproject.org/TR/ - Code of Conduct: https://github.com/solid/specification#code-of-conduct" ;
+  ex:name "solid/specification" ;
+  ex:siloId "matrix:!QxZtVBYQfMeMTnespj:gitter.im" ;
+  ex:siloUsername "matrix:#solid_specification:gitter.im" ;
+  ex:status con:Production ;
+  ex:subType con:CommunicationService .
+
 <urn:uuid:841dbf8c-025b-488e-8587-c3247f489336> a ex:Service ;
   ex:name "Solid Clinic" ;
   ex:serviceEndpoint <https://chuixuewan.github.io/solid-clinic/> ;
@@ -2302,10 +2310,12 @@ wd:Q978185 ex:name "TypeScript" ;
   ex:technicalKeyword "movies" .
 
 <urn:uuid:8747801f-16d0-4b52-8ff7-89e561ba0201> a ex:Service ;
-  ex:description "\n    The Solid Matrix Chat is a live chat where community members can connect.\n  " ;
-  ex:name "Solid Matrix Chat" ;
+  ex:description "Website: https://solid.mit.edu/ - Repos: https://github.com/solid/ - Forum: https://forum.solidproject.org/" ;
+  ex:name "solid" ;
   ex:provider <urn:uuid:639d3d9c-3f57-4236-a885-07a41aa5581e> ;
   ex:serviceEndpoint <https://matrix.to/to/#/#solid_project> ;
+  ex:siloId "matrix:!AdIacJniSdsOmHkZjQ:snopyta.org" ;
+  ex:siloUsername "matrix:#solid:converser.eu" ;
   ex:status con:Production ;
   ex:subType con:CommunicationService .
 

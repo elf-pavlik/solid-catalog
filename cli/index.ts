@@ -8,6 +8,7 @@ import { aggregateW3C } from './aggregations/w3c.ts'
 import { aggregateGithub } from './aggregations/github.ts'
 import { migrateTmpId } from './migrations/tmp-id.ts'
 import { aggregateWikidata } from './aggregations/wikidata.ts'
+import { aggregateMatrix } from './aggregations/matrix.ts'
 
 const dataPath = getPath(import.meta.url, '../catalog-data.ttl')
 const dataset = await loadData(dataPath)
@@ -70,8 +71,16 @@ aggregate.command('github')
 aggregate.command('wikidata')
   .description('Adds data from Wikidata')
   .action(async () => {
-    console.info('Fetching data Wikiadta')
+    console.info('Fetching data Wikidata')
     const updated = await aggregateWikidata(dataset)
+    await saveData(updated, dataPath)
+  })
+
+aggregate.command('matrix')
+  .description('Adds data from Matrix')
+  .action(async () => {
+    console.info('Fetching data Matrix')
+    const updated = await aggregateMatrix(dataset)
     await saveData(updated, dataPath)
   })
 
